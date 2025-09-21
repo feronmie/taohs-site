@@ -1,103 +1,177 @@
-import Image from "next/image";
+// FILE: src/app/page.tsx
+
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import Image from 'next/image'
+
+
+
+import HeroRotator from './_components/HeroRotator'
+import VisualCarousel from './_components/VisualCarousel'
+import ExploreWorld from './_components/ExploreWorld'
+import LatestScene from './_components/LatestScene'
+import JoinTheList from './_components/JoinTheList'
+import WhoWeAreSection from './_components/WhoWeAreSection'
+import TaohsWorldMoodboard from './_components/TaohsWorldMoodboard'
+import SocietyList from './_components/SocietyList'
+
+import FooterNav from './_components/FooterNav'
+
+export const metadata: Metadata = {
+  title: 'Inside TAOHS — Culture is currency',
+  description:
+    'Editorial homepage with a hero vibe scan, visual loops, and latest drops from the scene.',
+  openGraph: {
+    title: 'Inside TAOHS',
+    description: 'Scene-makers. Mood-movers. Society decoded.',
+    type: 'website',
+  },
+}
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <main className="bg-black text-white font-sans">
+      {/* Sticky Navbar */}
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+          <Link href="/" aria-label="TAOHS home" className="shrink-0">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/taohscolored.svg"
+              alt="TAOHS logo"
+              width={120}
+              height={120}
+              priority
+              sizes="120px"
             />
-            Deploy now
-          </a>
+          </Link>
+          <nav aria-label="Primary" className="text-sm font-medium">
+            <ul className="flex gap-6">
+              <li>
+                <a href="#scene" className="text-[#B79E62] hover:text-[#BEB5A9]">
+                  Scene & Society
+                </a>
+              </li>
+              <li>
+                <a href="#taohs-world" className="text-[#B79E62] hover:text-[#BEB5A9]">
+                  IT Girl
+                </a>
+              </li>
+              <li>
+                <a href="#society-list" className="text-[#B79E62] hover:text-[#BEB5A9]">
+                  Diaspora Diaries
+                </a>
+              </li>
+              <li>
+                <a href="/services" className="text-[#B79E62] hover:text-[#BEB5A9]">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#join" className="text-[#B79E62] hover:text-[#BEB5A9]">
+                  Join
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero */}
+      <section className="relative h-[90svh] w-full overflow-hidden">
+        <video
+          autoPlay
+          muted
+          playsInline
+          loop
+          preload="metadata"
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full object-cover z-0"
+          poster="/videos/sample3-poster.jpg"
+        >
+          <source src="/videos/sample3.mp4" type="video/mp4" />
+          <source src="/videos/sample3.webm" type="video/webm" />
+        </video>
+        <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-b from-black/40 via-transparent to-black/20" />
+        <div className="relative z-20 flex h-full flex-col items-center justify-center px-4 text-center">
+          <HeroRotator
+            headlines={[
+              'Culture is currency. We report its rise.',
+              'Scene-makers. Mood-movers. Society decoded.',
+              'TAOHS is presence, power, and pace.',
+              "Your favorite tastemaker’s favorite page.",
+            ]}
+          />
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#scene"
+            className="mt-10 inline-block rounded-lg border border-[#B79E62] px-6 py-3 text-white backdrop-blur transition hover:bg-pink-500/20"
           >
-            Read our docs
+            Explore TAOHS
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+      </section>
+
+      {/* Visual Carousel */}
+      <section
+        className="mx-auto max-w-7xl px-6 py-20 text-white"
+        aria-labelledby="visual-carousel"
+      >
+        <h2 id="visual-carousel" className="mb-8 font-serif text-3xl text-[#B79E62]">
+          Scene and Society
+        </h2>
+        <VisualCarousel
+          items={[
+            { src: '/videos/sample.mp4', label: 'Accra After Dark' },
+            { src: '/videos/sample2.mp4', label: 'Diaspora Club Vibes' },
+            { src: '/videos/sample3.mp4', label: 'OJude OBA' },
+            { src: '/videos/ITG.mp4', label: 'IT Girl' },
+          ]}
+        />
+      </section>
+
+      {/* WHO WE ARE */}
+      <WhoWeAreSection />
+
+      {/* Moodboard */}
+      <TaohsWorldMoodboard />
+
+      {/* Society List */}
+      <SocietyList />
+
+      {/* Latest Scene */}
+      <section
+        id="scene"
+        className="mx-auto max-w-7xl px-6 py-20 text-white"
+        aria-labelledby="latest-scene"
+      >
+        <h2 id="latest-scene" className="mb-8 font-serif text-3xl text-[#B79E62]">
+          Latest From the Scene
+        </h2>
+        <LatestScene />
+      </section>
+
+      {/* Explore World */}
+      <section
+        id="world"
+        className="mx-auto max-w-7xl px-6 py-20 text-white"
+        aria-labelledby="explore-world"
+      >
+        <h2 id="explore-world" className="mb-8 font-serif text-3xl text-[#B79E62]">
+          Explore TAOHS World
+        </h2>
+        <p className="mb-10 max-w-2xl text-slate-300">
+          Our editorial pillars — where culture circulates across fashion, cities, scenes,
+          and society.
+        </p>
+        <ExploreWorld />
+      </section>
+
+      {/* Join */}
+      <section id="join" className="mx-auto max-w-4xl px-6 py-20 text-center">
+        <JoinTheList />
+      </section>
+
+      {/* Footer */}
+      <FooterNav />
+    </main>
+  )
 }
