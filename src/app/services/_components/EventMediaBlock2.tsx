@@ -8,7 +8,7 @@ export default function BrandMediaBlock() {
   ]
 
   return (
-    <section id="brand-corporate" className="bg-[#003829] py-20 sm:py-28 text-white">
+    <section id="brand-corporate" className="bg-[url('/images/GP2.png')] bg-cover bg-center py-20 sm:py-28 text-white">
       <div className="mx-auto max-w-7xl px-6">
         <p className="text-xs uppercase tracking-[0.25em] text-[#B79E62]">Brand & Corporate Media</p>
         <h3 className="mt-2 font-serif text-3xl sm:text-4xl mb-10">

@@ -9,26 +9,15 @@ const posts = [
     pillar: 'IT Girl',
     title: 'Visual Identity',
     img: '/images/IT-G-TN.png',
-    link: 'https://instagram.com/p/example1',
+    link: 'https://www.instagram.com/theartofhighsociety/',
   },
   {
     pillar: 'IT Girl',
     title: 'Global Style Notes',
     img: '/images/IT-G-TN.png',
-    link: 'https://instagram.com/p/example2',
+    link: 'https://www.instagram.com/theartofhighsociety/',
   },
-  {
-    pillar: 'IT Girl',
-    title: 'Moodboard: Alt-Cool',
-    img: '/images/scene.jpg',
-    link: 'https://instagram.com/p/example3',
-  },
-  {
-    pillar: 'IT Girl',
-    title: 'Cultural Threads',
-    img: '/images/scene.jpg',
-    link: 'https://instagram.com/p/example4',
-  },
+  
 ]
 
 export default function ItGirlDiaspora() {
@@ -41,7 +30,7 @@ export default function ItGirlDiaspora() {
     setCurrent((prev) => (prev - visible >= 0 ? prev - visible : posts.length - visible))
 
   return (
-    <section className="px-6 py-24 max-w-6xl mx-auto text-white">
+    <section id='taohs-ITG' className="px-6 py-24 max-w-6xl mx-auto text-white">
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-serif text-gilt">
           IT Girl 
@@ -80,20 +69,7 @@ export default function ItGirlDiaspora() {
         </div>
 
         {/* Controls */}
-        <div className="flex justify-center mt-6 space-x-4">
-          <button
-            onClick={prev}
-            className="px-4 py-2 bg-white/10 rounded-full hover:bg-white/20 transition"
-          >
-            ‹
-          </button>
-          <button
-            onClick={next}
-            className="px-4 py-2 bg-white/10 rounded-full hover:bg-white/20 transition"
-          >
-            ›
-          </button>
-        </div>
+        
       </div>
     </section>
   )
