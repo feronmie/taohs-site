@@ -8,7 +8,7 @@ export default function CreativeProjectsBlock() {
   ]
 
   return (
-    <section id="creative-projects" className="bg-[#003829] py-20 sm:py-28 text-white">
+    <section id="creative-projects" className="bg-[url('/images/gp3.png')] bg-cover bg-center py-20 sm:py-28 text-white">
       <div className="mx-auto max-w-7xl px-6">
         <p className="text-xs uppercase tracking-[0.25em] text-[#B79E62]">Creative Projects & Productions</p>
         <h3 className="mb-10 mt-2 font-serif text-3xl sm:text-4xl">Original Formats. Seamless Delivery.</h3>

@@ -58,28 +58,25 @@ export default function SplitEditorialCarousel({
 
       {/* TEXT SIDE */}
       <AnimatePresence mode="wait">
-      <motion.div
-  key={`text-${index}`}
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  exit={{ opacity: 0, y: -20 }}
-  transition={{ duration: 0.6 }}
-  className="col-span-1 md:col-span-6 flex flex-col justify-center items-center md:items-start"
->
-  <div className="relative group rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 p-6 shadow-xl transition hover:scale-[1.02] hover:shadow-2xl">
-    <h4 className="font-serif text-2xl text-[#B79E62] mb-2 group-hover:text-[#FFD479] transition">
-      {items[index].title}
-    </h4>
-    <p className="text-base text-white/80 leading-relaxed">
-      {items[index].desc}
-    </p>
+  <motion.div
+    key={`text-${index}`}
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: -20 }}
+    transition={{ duration: 0.6 }}
+    className="col-span-1 md:col-span-6 flex flex-col justify-center items-center md:items-start"
+  >
+    <div className="max-w-lg">
+      <h4 className="font-serif text-3xl tracking-tight text-white mb-4 border-b border-[#B79E62]/40 pb-2">
+        {items[index].title}
+      </h4>
+      <p className="text-lg text-white/70 leading-relaxed font-light">
+        {items[index].desc}
+      </p>
+    </div>
+  </motion.div>
+</AnimatePresence>
 
-    {/* Cool gradient accent bar */}
-    <span className="absolute left-0 bottom-0 h-1 w-full bg-gradient-to-r from-[#B79E62] via-pink-500 to-[#B79E62] opacity-70 group-hover:opacity-100 transition" />
-  </div>
-</motion.div>
-
-      </AnimatePresence>
 
       {/* DOTS */}
       <div className="col-span-1 md:col-span-12 mt-6 flex justify-center gap-2">
