@@ -52,49 +52,74 @@ export default function Home() {
       <SocietyList />
 
         {/* Scene and Society */}
-<section id='scene-society'
-  className="mx-auto max-w-7xl px-6 py-20 text-white"
+        <section
+  id="scene-society"
+  className="relative w-full bg-[url('/images/GP9.jpg')] bg-cover bg-center bg-no-repeat text-white py-24"
   aria-labelledby="scene-banner"
 >
-<h2  className="text-4xl font-serif text-gilt mb-12 text-center">
-    Scene and Society
-  </h2>
+  
+  {/* Brand tint overlay */}
+  <div className="absolute inset-0 bg-[#003829]/70 mix-blend-multiply" />
 
-  <div className="relative w-full overflow-hidden rounded-2xl shadow-xl">
-    {/* eslint-disable-next-line @next/next/no-img-element */}
-    <img
-      src="/images/SS.png"
-      alt="Scene and Society Latest Project"
-      className="w-full h-[600px] object-cover"
-    />
+  {/* Content Container */}
+  <div className="relative mx-auto max-w-7xl px-6">
+    <h2
+      id="scene-banner"
+      className="text-4xl md:text-5xl font-serif text-gilt mb-12 text-center"
+    >
+      Scene & Society
+    </h2>
 
-    {/* Overlay Text */}
-    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent p-6">
-      <h3 className="text-2xl font-serif text-[#B79E62]">Coming Soon</h3>
-      <p className="text-sm text-white/80">
-        Our latest Scene & Society drop — culture decoded through style, sound, and stories.
-      </p>
+    <div className="relative w-full overflow-hidden rounded-2xl shadow-2xl">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/images/SS.png"
+        alt="Scene and Society Latest Project"
+        className="w-full h-[600px] object-cover"
+      />
+
+      {/* Overlay Text */}
+      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-8">
+        <h3 className="text-2xl md:text-3xl font-serif text-[#B79E62] mb-2">
+          Coming Soon
+        </h3>
+        <p className="text-base md:text-lg text-white/85 max-w-2xl">
+          Our latest Scene & Society drop — culture decoded through style, sound, and stories.
+        </p>
+      </div>
     </div>
   </div>
 </section>
 
 
+
       {/* Latest Scene */}
       <section
-        id="scene"
-        className="mx-auto max-w-7xl px-6 py-20 text-white"
-        aria-labelledby="latest-scene"
-      >
-        <h2 id="latest-scene" className="mb-8 font-serif text-3xl text-[#B79E62]">
-          Latest From the Scene
-        </h2>
-        <LatestScene />
-      </section>
+  id="scene"
+  className="relative isolate w-full
+             bg-[linear-gradient(to_top,rgba(0,0,0,0.7),rgba(0,0,0,0.25)),url('/images/GP2.png')]
+             bg-cover bg-center bg-no-repeat text-white py-24"
+  aria-labelledby="latest-scene"
+>
+  <div className="relative z-10 mx-auto max-w-7xl px-6">
+    <h2 id="latest-scene" className="mb-10 font-serif text-4xl md:text-5xl text-[#B79E62]">
+      Latest From the Scene
+    </h2>
+
+    {/* Keep your component here */}
+    <div className="relative z-20">
+      <LatestScene />
+    </div>
+  </div>
+</section>
+
 
     
 
       {/* Join */}
-      <section id="join" className="mx-auto max-w-4xl px-6 py-20 text-center">
+      <section id="join" className="relative isolate w-full
+             bg-[linear-gradient(to_top,rgba(0,0,0,0.7),rgba(0,0,0,0.25)),url('/images/GP3.png')]
+             bg-cover bg-center bg-no-repeat text-white py-24">
         <JoinTheList />
       </section>
 

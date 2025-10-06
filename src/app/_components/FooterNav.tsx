@@ -12,7 +12,7 @@ const quickLinks = [
 export default function FooterNav() {
   return (
     <motion.footer
-      className="fixed bottom-0 left-0 right-0 bg-black/80 border-t border-slate-700 backdrop-blur z-50"
+      className="fixed bottom-0 left-0 right-0 bg-[#003829] border-t border-slate-700 backdrop-blur z-50"
       initial={{ y: 80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -47,3 +47,5 @@ export default function FooterNav() {
     </motion.footer>
   )
 }
+
+

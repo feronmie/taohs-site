@@ -31,51 +31,61 @@ export default function SplitEditorialCarousel({
   const dotOff = tone === 'light' ? 'bg-zinc-400' : 'bg-white/40'
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-10">
-      {/* IMAGE SIDE */}
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={`img-${index}`}
-          initial={{ opacity: 0, x: flipped ? 60 : -60 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: flipped ? -60 : 60 }}
-          transition={{ duration: 0.5 }}
-          className={`col-span-1 md:col-span-6 ${imgColStart} h-full flex items-center justify-center`}
-        >
-          {/* Portrait frame with consistent size */}
-          <div className="relative aspect-[2/3] w-[340px] sm:w-[380px] md:w-[420px] overflow-hidden rounded-2xl shadow-xl">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={items[index].img}
-              alt={items[index].title}
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-            {/* optional subtle film grain / vignette overlay */}
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-black/10" />
-          </div>
-        </motion.div>
-      </AnimatePresence>
+    <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-10 md:gap-16">
+  {/* IMAGE SIDE */}
+  <AnimatePresence mode="wait">
+    <motion.div
+      key={`img-${index}`}
+      initial={{ opacity: 0, x: flipped ? 60 : -60 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: flipped ? -60 : 60 }}
+      transition={{ duration: 0.5 }}
+      className={`col-span-1 md:col-span-6 flex ${
+        flipped ? 'md:col-start-7 justify-end' : 'md:col-start-1 justify-start'
+      }`}
+    >
+      <div className="relative aspect-[2/3] w-[340px] sm:w-[380px] md:w-[420px] overflow-hidden rounded-2xl shadow-xl flex-shrink-0">
+        <img
+          src={items[index].img}
+          alt={items[index].title}
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-black/10" />
+      </div>
+    </motion.div>
+  </AnimatePresence>
 
-      {/* TEXT SIDE */}
-      <AnimatePresence mode="wait">
-  <motion.div
-    key={`text-${index}`}
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    exit={{ opacity: 0, y: -20 }}
-    transition={{ duration: 0.6 }}
-    className="col-span-1 md:col-span-6 flex flex-col justify-center items-center md:items-start"
-  >
-    <div className="max-w-lg">
-      <h4 className="font-serif text-3xl tracking-tight text-white mb-4 border-b border-[#B79E62]/40 pb-2">
-        {items[index].title}
-      </h4>
-      <p className="text-lg text-white/70 leading-relaxed font-light">
-        {items[index].desc}
-      </p>
-    </div>
-  </motion.div>
-</AnimatePresence>
+  {/* TEXT SIDE */}
+  <AnimatePresence mode="wait">
+    <motion.div
+      key={`text-${index}`}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.6 }}
+      className={`col-span-1 md:col-span-6 flex items-center ${
+        flipped
+          ? 'md:col-start-1 md:justify-end text-right'
+          : 'md:col-start-7 md:justify-start text-left'
+      }`}
+    >
+      <div className="max-w-lg md:h-[560px] flex flex-col justify-center">
+        <div className="relative rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 p-8 shadow-xl transition hover:scale-[1.02] hover:shadow-2xl">
+          <h4 className="font-serif text-3xl md:text-4xl text-[#B79E62] mb-3 tracking-tight leading-tight">
+            {items[index].title}
+          </h4>
+          <div className="h-[1px] w-24 bg-[#B79E62]/60 mb-4"></div>
+          <p className="text-base md:text-lg text-white/85 leading-relaxed font-light tracking-wide">
+            {items[index].desc}
+          </p>
+          <span className="absolute left-0 bottom-0 h-[2px] w-full bg-gradient-to-r from-[#B79E62]/70 via-[#B79E62] to-[#B79E62]/70 opacity-70 group-hover:opacity-100 transition" />
+        </div>
+      </div>
+    </motion.div>
+  </AnimatePresence>
+
+
+
 
 
       {/* DOTS */}
