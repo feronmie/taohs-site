@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <>
       {/* Top sticky header */}
-      <header className="sticky top-0 z-[90] border-b border-white/10 bg-black/70 backdrop-blur">
+      <header className="sticky top-0 z-[90] border-b border-white/10 bg-[#003829] backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           {/* Logo (stays visible) */}
           <Link href="/" aria-label="TAOHS home" className="shrink-0">
@@ -51,7 +51,7 @@ export default function Navbar() {
 
         {/* Slide-in panel */}
         <aside
-          className={`absolute right-0 top-0 h-full w-full max-w-xs bg-black/95 border-l border-white/10
+          className={`absolute right-0 top-0 h-full w-full max-w-xs bg-[#003829] border-l border-white/10
                       transform transition-transform duration-300
                       ${open ? 'translate-x-0' : 'translate-x-full'}`}
         >
@@ -61,7 +61,7 @@ export default function Navbar() {
             <button
               onClick={() => setOpen(false)}
               aria-label="Close menu"
-              className="text-white hover:text-[#B79E62] transition"
+              className="text-[#B79E62] hover:text-white transition"
             >
               <X size={28} />
             </button>
@@ -94,3 +94,5 @@ export default function Navbar() {
     </>
   )
 }
+
+
