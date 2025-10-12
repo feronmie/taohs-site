@@ -54,18 +54,17 @@ export default function Home() {
         {/* Scene and Society */}
         <section
   id="scene-society"
-  className="relative w-full bg-[url('/images/GP9.jpg')] bg-cover bg-center bg-no-repeat text-white py-24"
+  className="relative w-full bg-[url('/images/GP2.png')] bg-cover bg-center bg-no-repeat text-white py-24"
   aria-labelledby="scene-banner"
 >
   
-  {/* Brand tint overlay */}
-  <div className="absolute inset-0 bg-[#003829]/70 mix-blend-multiply" />
+  
 
   {/* Content Container */}
   <div className="relative mx-auto max-w-7xl px-6">
     <h2
       id="scene-banner"
-      className="text-4xl md:text-5xl font-serif text-gilt mb-12 text-center"
+      className="text-4xl md:text-5xl font-serif text-gilt mb-12 text-center text-[#B79E62]"
     >
       Scene & Society
     </h2>
@@ -96,14 +95,15 @@ export default function Home() {
       {/* Latest Scene */}
       <section
   id="scene"
-  className="relative isolate w-full
-             bg-[linear-gradient(to_top,rgba(0,0,0,0.7),rgba(0,0,0,0.25)),url('/images/GP2.png')]
-             bg-cover bg-center bg-no-repeat text-white py-24"
+  className="relative  w-full isolate overflow-hidden bg-[#003829] text-white py-20 sm:py-28 "
+
   aria-labelledby="latest-scene"
 >
+
+  
   <div className="relative z-10 mx-auto max-w-7xl px-6">
     <h2 id="latest-scene" className="mb-10 font-serif text-4xl md:text-5xl text-[#B79E62]">
-      Latest From the Scene
+      Latest From The Scene
     </h2>
 
     {/* Keep your component here */}

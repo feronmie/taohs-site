@@ -11,29 +11,15 @@ export default function SocietyList() {
   return (
     <section
       id="society-list"
-      className="relative isolate overflow-hidden w-full text-white py-20 sm:py-28"
+      className="relative isolate overflow-hidden bg-[#003829] w-full text-white py-20 sm:py-28"
       >
-        {/* Moving background */}
-        <motion.div
-          aria-hidden
-          className="absolute inset-0 -z-20"
-          initial={{ scale: 1.05, x: 0 }}
-          animate={{ scale: 1.15, x: 120 }}
-          transition={{ duration: 10, repeat: Infinity, repeatType: 'mirror', ease: 'linear' }}
-          style={{
-            backgroundImage: "url('/images/GP8.png')",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            willChange: 'transform',
-          }}
-        />
+   
       
-        {/* Dark brand tint above bg, still behind content */}
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.55),rgba(0,0,0,0.85))]" />
+   
 
       {/* Content */}
       <div className="relative max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-serif text-gilt mb-12 text-center">
+        <h2 className="text-4xl md:text-5xl font-serif text-gilt mb-12 text-center text-[#B79E62]">
           Diaspora Diaries
         </h2>
 
