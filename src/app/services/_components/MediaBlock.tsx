@@ -34,22 +34,9 @@ export default function EventMediaBlock() {
 
   return (
     <section  id="event-media"
-    className="relative isolate overflow-hidden w-full text-white py-20 sm:py-28"
+    className="relative isolate overflow-hidden bg-[#003829] w-full text-white py-20 sm:py-28"
   >
-    {/* Moving background */}
-    <motion.div
-      aria-hidden
-      className="absolute inset-0 -z-20"
-      initial={{ scale: 1.05, x: 0 }}
-      animate={{ scale: 1.15, x: 120 }}
-      transition={{ duration: 10, repeat: Infinity, repeatType: 'mirror', ease: 'linear' }}
-      style={{
-        backgroundImage: "url('/images/GP9.jpg')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        willChange: 'transform',
-      }}
-    />
+   
   
     {/* Dark brand tint above bg, still behind content */}
     <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.45),rgba(0,0,0,0.5))]" />

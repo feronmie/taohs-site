@@ -71,9 +71,10 @@ export default function Navbar() {
           <nav className="h-[calc(100%-64px)] overflow-y-auto px-10 py-10">
             <ul className="flex flex-col items-end gap-5 text-lg font-serif">
               {[
-                { label: 'Scene & Society', href: '#scene-society' },
+                
                 { label: 'IT Girl', href: '#taohs-ITG' },
                 { label: 'Diaspora Diaries', href: '#society-list' },
+                { label: 'Scene & Society', href: '#scene-society' },
                 { label: 'Services', href: '/services' },
                 { label: 'Join', href: '#join' },
               ].map((item) => (

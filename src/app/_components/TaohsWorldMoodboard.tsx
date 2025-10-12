@@ -32,29 +32,17 @@ export default function ItGirlDiaspora() {
   return (
     <section
   id="taohs-ITG"
-  className="relative isolate overflow-hidden w-full text-white py-20 sm:py-28"
+  className="relative isolate overflow-hidden bg-[url('/images/GP2.png')] w-full text-white py-20 sm:py-28"
   >
-    {/* Moving background */}
-    <motion.div
-      aria-hidden
-      className="absolute inset-0 -z-20"
-      initial={{ scale: 1.05, x: 0 }}
-      animate={{ scale: 1.15, x: 120 }}
-      transition={{ duration: 10, repeat: Infinity, repeatType: 'mirror', ease: 'linear' }}
-      style={{
-        backgroundImage: "url('/images/GP2.png')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        willChange: 'transform',
-      }}
-    />
+   
+    
   
     {/* Dark brand tint above bg, still behind content */}
-    <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.55),rgba(0,0,0,0.85))]" />
+   
 
   <div className="relative max-w-6xl mx-auto px-6">
     <div className="text-center mb-12">
-      <h2 className="text-4xl md:text-5xl font-serif text-gilt">IT Girl</h2>
+      <h2 className="text-4xl md:text-5xl font-serif text-gilt text-[#B79E62]">IT Girl</h2>
       <p className="text-white/70 mt-3 text-lg">
         Monthly updates from our pillars of style & culture.
       </p>
