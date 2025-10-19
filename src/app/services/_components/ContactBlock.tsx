@@ -21,10 +21,13 @@ export default function ContactBlock() {
           <div>
             <p className="text-xs uppercase tracking-[0.3em] text-[#B79E62]">Let’s Collaborate</p>
             <h3 className="mt-2 font-serif text-4xl">Book Us</h3>
-            <p className="mt-3 text-zinc-600">
-              Tell us about your event, brand, or production. We’ll shape an editorial-grade treatment
-              and assemble the right creative team.
-            </p>
+            <p className="mt-3 text-sm sm:text-base text-white/85 font-medium leading-relaxed tracking-wide max-w-md">
+  Tell us about your event, brand, or production. We’ll shape an editorial-grade treatment
+  and assemble the right creative team.
+</p>
+
+
+
             <div className="mt-6 space-y-1 text-sm">
               <p><span className="font-medium">Email:</span> info@theartofhighsociety.com</p>
               <p><span className="font-medium">Phone:</span> +234 812 927 9260</p>

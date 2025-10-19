@@ -8,7 +8,7 @@ import HeroRotator from './HeroRotator'
 const videos = [
   { src: 'videos/sample3.mp4', poster: '/videos/sample1-poster.jpg' },
   { src: 'videos/sample4.mp4', poster: '/videos/sample2-poster.jpg' },
-  { src: 'videos/sample5.mp4', poster: '/videos/sample3-poster.jpg' },
+  { src: 'videos/sample7.mp4', poster: '/videos/sample3-poster.jpg' },
 ]
 
 export default function HeroVideoCarousel() {
