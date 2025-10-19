@@ -5,7 +5,7 @@ import SplitEditorialCarousel from './EditorialCarousel'
 
 export default function BrandMediaBlock() {
   const brandMedia = [
-    { title: 'Brand Films & Recap Documentaries', desc: '2–5 minute cinematic films showcasing your heritage, story, or product.', img: '/images/B1.jpg' },
+    { title: 'Brand Films & Recap Documentaries', desc: '2–5 minute cinematic films showcasing your heritage, story, or product.', img: '/images/BCM.jpg' },
     { title: 'Digital Asset Pack', desc: 'Photo + video deliverables designed for ads, Instagram/TikTok, LinkedIn, and websites.', img: '/images/B1.jpg' },
     { title: 'Campaign Coverage', desc: 'Editorial documentation of launches, pop-ups, press previews, and fashion shows.', img: '/images/B1.jpg' },
   ]
@@ -33,6 +33,5 @@ export default function BrandMediaBlock() {
     </section>
   )
 }
-
 
 

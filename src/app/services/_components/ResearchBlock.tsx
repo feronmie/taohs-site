@@ -4,7 +4,7 @@ import SplitEditorialCarousel from './EditorialCarousel'
 
 export default function CreativeProjectsBlock() {
   const creative = [
-    { title: 'Consulting & Creative Direction', desc: 'Building creative teams, managing productions, and ensuring seamless delivery.', img: '/images/C1.jpg' },
+    { title: 'Consulting & Creative Direction', desc: 'Building creative teams, managing productions, and ensuring seamless delivery.', img: '/images/CP.jpg' },
     { title: 'Show & Docu-Series Development', desc: 'Producing original projects like Scene & Society and other cultural storytelling formats.', img: '/images/C2.jpg' },
     { title: 'Content Collaborations & Partnerships', desc: 'Co-creating storytelling projects with clients and brands.', img: '/images/C3.jpg' },
   ]

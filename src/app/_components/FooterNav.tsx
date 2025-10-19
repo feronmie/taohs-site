@@ -1,12 +1,14 @@
 'use client'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { Instagram, Twitter, Mail } from 'lucide-react'
+import { Instagram, Youtube, Music as TikTok } from 'lucide-react'
+import TikTokIcon from './TikTokIcon'
+
 
 const quickLinks = [
   { label: 'About', href: '/about' },
-  { label: 'Privacy', href: '/privacy' },
-  { label: 'Terms', href: '/terms' },
+  { label: 'Privacy', href: './privacy-policy' },
+  { label: 'Terms', href: './Terms-of-service' },
 ]
 
 export default function FooterNav() {
@@ -31,18 +33,31 @@ export default function FooterNav() {
           ))}
         </div>
 
-        {/* Socials */}
-        <div className="flex gap-4">
-          <Link href="https://instagram.com" target="_blank" className="text-[#B79E62] hover:text-[#BEB5A9]">
-            <Instagram size={18} />
-          </Link>
-          <Link href="https://twitter.com" target="_blank" className="text-[#B79E62] hover:text-[#BEB5A9]">
-            <Twitter size={18} />
-          </Link>
-          <Link href="mailto:hello@taohs.com" className="text-[#B79E62] hover:text-[#BEB5A9]">
-            <Mail size={18} />
-          </Link>
-        </div>
+       {/* Socials */}
+<div className="flex gap-4">
+  <Link
+    href="https://www.instagram.com/theartofhighsociety/"
+    target="_blank"
+    className="text-[#B79E62] hover:text-[#BEB5A9] transition"
+  >
+    <Instagram size={18} />
+  </Link>
+  <Link
+    href="https://www.youtube.com/@theartofhighsociety"
+    target="_blank"
+    className="text-[#B79E62] hover:text-[#BEB5A9] transition"
+  >
+    <Youtube size={18} />
+  </Link>
+  <Link
+    href="https://www.tiktok.com/@taohs_"
+    target="_blank"
+    className="text-[#B79E62] hover:text-[#BEB5A9] transition"
+  >
+    <TikTokIcon size={18} />
+  </Link>
+</div>
+
       </div>
     </motion.footer>
   )
