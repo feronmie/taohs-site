@@ -204,10 +204,7 @@ export default function TermsOfServicePage() {
                   >
                    contact@theartofhighsociety.com
                   </a>
-                  <br />
-                  📍 Address: [Insert Address]
-                  <br />
-                  🕘 Hours: 9:00 AM – 6:00 PM (Mon – Fri)
+                  
                 </p>
               </>
             }

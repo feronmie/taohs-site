@@ -195,7 +195,7 @@ export default function PrivacyPolicyPage() {
                 <p className="mt-4">
                   <strong>The Art of High Society (TAOHS)</strong><br />
                   📧 Email: <a href="mailto:privacy@theartofhighsociety.com" className="text-[#B79E62] hover:underline">privacy@theartofhighsociety.com</a><br />
-                  📍 Address: [Insert Address]
+                
                 </p>
               </>
             }
