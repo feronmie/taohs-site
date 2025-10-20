@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { Instagram, Youtube, Music as TikTok } from 'lucide-react'
 import TikTokIcon from './TikTokIcon'
 const quickLinks = [
-  { label: 'About', href: './about' },
+  
   { label: 'Privacy', href: '../privacy-policy' },
   { label: 'Terms', href: '../Terms-of-service' },
 ]
