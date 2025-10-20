@@ -115,7 +115,7 @@ export default function JoinTheList() {
                     <p className="text-sm text-white/60 mt-3">
                       Prefer chat?{' '}
                       <a
-                        href="https://wa.me/2340000000000"
+                        href="https://wa.me/2348129279260"
                         target="_blank"
                         rel="noreferrer"
                         className="underline text-[#B79E62]"
