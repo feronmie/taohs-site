@@ -29,7 +29,7 @@ export default function ContactBlock() {
 
 
             <div className="mt-6 space-y-1 text-sm">
-              <p><span className="font-medium">Email:</span> info@theartofhighsociety.com</p>
+              <p><span className="font-medium">Email:</span> admin@theartofhighsociety.com</p>
               <p><span className="font-medium">Phone:</span> +234 812 927 9260</p>
             </div>
           </div>
