@@ -19,6 +19,8 @@ import TaohsWorldMoodboard from './_components/TaohsWorldMoodboard'
 import SocietyList from './_components/SocietyList'
 
 import FooterNav from './_components/FooterNav'
+import PortfolioHomepageSection from "./_components/PortfolioHomepageSection";
+
 
 export const metadata: Metadata = {
   title: 'Inside TAOHS — Culture is currency',
@@ -70,48 +72,29 @@ export default function Home() {
     </h2>
 
     <div className="relative w-full overflow-hidden rounded-2xl shadow-2xl">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="/images/SS.png"
-        alt="Scene and Society Latest Project"
-        className="w-full h-[600px] object-cover"
-      />
+  {/* Responsive YouTube container */}
+  <div className="relative w-full h-0 pb-[56.25%] overflow-hidden rounded-2xl">
+    <iframe
+      className="absolute top-0 left-0 w-full h-full"
+      src="https://www.youtube.com/embed/StaNi0TPxXY?si=TaXyaaPbGiX4ySBz"
+      title="Scene & Society Video"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerPolicy="strict-origin-when-cross-origin"
+      allowFullScreen
+    ></iframe>
+  </div>
+  </div>
 
-      {/* Overlay Text */}
-      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-8">
-        <h3 className="text-2xl md:text-3xl font-serif text-[#B79E62] mb-2">
-          Coming Soon
-        </h3>
-        <p className="text-base md:text-lg text-white/85 max-w-2xl">
-          Our latest Scene & Society drop — culture decoded through style, sound, and stories.
-        </p>
-      </div>
-    </div>
+   
   </div>
 </section>
 
 
 
-      {/* Latest Scene */}
-      <section
-  id="scene"
-  className="relative  w-full isolate overflow-hidden bg-[#003829] text-white py-20 sm:py-28 "
+    
 
-  aria-labelledby="latest-scene"
->
-
-  
-  <div className="relative z-10 mx-auto max-w-7xl px-6">
-    <h2 id="latest-scene" className="mb-10 font-serif text-4xl md:text-5xl text-[#B79E62]">
-      Latest From The Scene
-    </h2>
-
-    {/* Keep your component here */}
-    <div className="relative z-20">
-      <LatestScene />
-    </div>
-  </div>
-</section>
+<PortfolioHomepageSection /> 
 
 
     
