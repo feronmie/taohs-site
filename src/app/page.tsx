@@ -17,6 +17,7 @@ import JoinTheList from './_components/JoinTheList'
 import WhoWeAreSection from './_components/WhoWeAreSection'
 import TaohsWorldMoodboard from './_components/TaohsWorldMoodboard'
 import SocietyList from './_components/SocietyList'
+import SceneSocietySection from './_components/SceneSocietySection'
 
 import FooterNav from './_components/FooterNav'
 import PortfolioHomepageSection from "./_components/PortfolioHomepageSection";
@@ -54,43 +55,7 @@ export default function Home() {
       <SocietyList />
 
         {/* Scene and Society */}
-        <section
-  id="scene-society"
-  className="relative w-full bg-[url('/images/GP2.png')] bg-cover bg-center bg-no-repeat text-white py-24"
-  aria-labelledby="scene-banner"
->
-  
-  
-
-  {/* Content Container */}
-  <div className="relative mx-auto max-w-7xl px-6">
-    <h2
-      id="scene-banner"
-      className="text-4xl md:text-5xl font-serif text-gilt mb-12 text-center text-[#B79E62]"
-    >
-      Scene & Society
-    </h2>
-
-    <div className="relative w-full overflow-hidden rounded-2xl shadow-2xl">
-  {/* Responsive YouTube container */}
-  <div className="relative w-full h-0 pb-[56.25%] overflow-hidden rounded-2xl">
-    <iframe
-      className="absolute top-0 left-0 w-full h-full"
-      src="https://www.youtube.com/embed/StaNi0TPxXY?si=TaXyaaPbGiX4ySBz"
-      title="Scene & Society Video"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerPolicy="strict-origin-when-cross-origin"
-      allowFullScreen
-    ></iframe>
-  </div>
-  </div>
-
-   
-  </div>
-</section>
-
-
+        <SceneSocietySection />
 
     
 

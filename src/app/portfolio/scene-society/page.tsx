@@ -10,7 +10,7 @@ import FooterNav from "../../_components/FooterNav";
 const sampleEvent = {
   title: "Scene & Society – Lagos",
   date: "2025",
-  location: "Lagos, 2025",
+  location: "Lagos,  Nigeria",
   images: [
     "/images/scene-society/1.jpg",
     "/images/scene-society/2.jpg",

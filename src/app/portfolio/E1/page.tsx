@@ -10,7 +10,7 @@ import FooterNav from "../../_components/FooterNav";
 const sampleEvent = {
   title: "E1 – Exclusive",
   date: "2025",
-  location: "Lagos, 2025",
+  location: "Lagos, Nigeria",
   images: [
     "/images/E1/E1.jpeg",
     

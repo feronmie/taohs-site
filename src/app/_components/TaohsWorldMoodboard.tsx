@@ -8,8 +8,8 @@ const posts = [
   {
     pillar: 'IT Girl',
     title: 'Visual Identity',
-    img: '/images/IT-G-TN.png',
-    link: 'https://www.instagram.com/theartofhighsociety/',
+    img: '/images/dia1.jpeg',
+    link: 'https://www.instagram.com/p/DRPrhZHjXdw/?igsh=MWpvYWF0ZTU2d2NiZQ==',
   },
   {
     pillar: 'IT Girl',
