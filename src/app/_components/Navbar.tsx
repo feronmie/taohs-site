@@ -76,7 +76,7 @@ export default function Navbar() {
                 { label: 'Diaspora Diaries', href: '#society-list' },
                 { label: 'Scene & Society', href: '#scene-society' },
                 { label: 'Services', href: '/services' },
-                { label: 'TAOHS Archives', href: '/#portfolio' },
+                { label: 'TAOHS Archive', href: '/#portfolio' },
                 { label: 'Join', href: '#join' },
               ].map((item) => (
                 <li key={item.label}>
