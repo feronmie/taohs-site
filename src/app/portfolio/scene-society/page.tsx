@@ -64,6 +64,7 @@ const sampleEvent = {
   ],
   videos: [
     "/images/lagos01/w9.mp4",
+    "/images/lagos01/w9.mp4",
     
   ],
 };
