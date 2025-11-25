@@ -63,8 +63,7 @@ const sampleEvent = {
     "/images/scene-society/ss2.jpg",
   ],
   videos: [
-    "/images/lagos01/w9.mp4",
-    "/images/lagos01/w9.mp4",
+   
     
   ],
 };
