@@ -21,23 +21,26 @@ export default function SceneSocietySection() {
             Scene & Society
           </h2>
 
-          {/* IMAGE WITH PLAY BUTTON OVERLAY */}
+          {/* RESPONSIVE IMAGE + PLAY OVERLAY */}
           <div
-            className="relative w-full overflow-hidden rounded-2xl shadow-2xl cursor-pointer group"
+            className="relative w-full rounded-2xl overflow-hidden shadow-2xl cursor-pointer group"
             onClick={() => setOpen(true)}
           >
-            <img
-              src="/images/scs.jpeg"
-              alt="Scene and Society Latest Project"
-              className="w-full h-[600px] object-cover rounded-2xl transition duration-300 group-hover:scale-105"
-            />
-
-            {/* PLAY BUTTON OVERLAY */}
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 flex items-center justify-center transition">
-              <Play
-                size={70}
-                className="text-white opacity-90 drop-shadow-xl group-hover:scale-110 transition"
+            {/* Aspect-ratio container */}
+            <div className="relative w-full aspect-[3/4] md:aspect-video">
+              <img
+                src="/images/scs.jpeg"
+                alt="Scene and Society"
+                className="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105"
               />
+
+              {/* Play Overlay */}
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 flex items-center justify-center transition">
+                <Play
+                  size={70}
+                  className="text-white opacity-90 drop-shadow-xl group-hover:scale-110 transition"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -47,7 +50,6 @@ export default function SceneSocietySection() {
       {open && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-[999]">
           
-          {/* Close button */}
           <button
             onClick={() => setOpen(false)}
             className="absolute top-6 right-6 text-white hover:text-gray-300 transition"
@@ -55,7 +57,6 @@ export default function SceneSocietySection() {
             <X size={34} />
           </button>
 
-          {/* YouTube Frame */}
           <div className="w-full max-w-4xl aspect-video">
             <iframe
               className="w-full h-full rounded-xl"
