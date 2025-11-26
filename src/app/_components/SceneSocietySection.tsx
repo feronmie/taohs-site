@@ -23,26 +23,30 @@ export default function SceneSocietySection() {
 
           {/* RESPONSIVE IMAGE + PLAY OVERLAY */}
           <div
-            className="relative w-full rounded-2xl overflow-hidden shadow-2xl cursor-pointer group"
-            onClick={() => setOpen(true)}
-          >
-            {/* Aspect-ratio container */}
-            <div className="relative w-full aspect-[3/4] md:aspect-video">
-              <img
-                src="/images/scs.jpeg"
-                alt="Scene and Society"
-                className="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105"
-              />
+  className="relative w-full rounded-2xl overflow-hidden shadow-2xl cursor-pointer group"
+  onClick={() => setOpen(true)}
+>
+  <div className="relative w-full aspect-[3/4] md:aspect-video bg-black">
+    <img
+      src="/images/scs.jpeg"
+      alt="Scene and Society"
+      className="
+        absolute inset-0 w-full h-full 
+        object-contain      /* mobile: no crop */
+        md:object-cover     /* desktop: crop to fit cinematic */
+        transition duration-300 
+        group-hover:scale-105
+      "
+    />
+    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 flex items-center justify-center transition">
+      <Play
+        size={70}
+        className="text-white opacity-90 drop-shadow-xl group-hover:scale-110 transition"
+      />
+    </div>
+  </div>
+</div>
 
-              {/* Play Overlay */}
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 flex items-center justify-center transition">
-                <Play
-                  size={70}
-                  className="text-white opacity-90 drop-shadow-xl group-hover:scale-110 transition"
-                />
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
