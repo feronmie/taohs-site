@@ -14,14 +14,16 @@ const sampleEvent = {
     
   ],
   videos: [
-    "/images/weddings/w1.mp4",
+    
     "/images/weddings/w2.mp4",
-    "/images/weddings/w3.mp4",
-    "/images/weddings/w4.mp4",
-    "/images/weddings/w5.mp4",
-    "/images/weddings/w6.mp4",
-    "/images/weddings/w7.mp4",
+    "/images/weddings/w5.mov",
+    "/images/weddings/w6.mov",
+    "/images/weddings/w7.mov",
     "/images/weddings/w8.mp4",
+    "/images/weddings/w9.mov",
+    "/images/weddings/w10.mov",
+    "/images/weddings/w11.mov",
+    "/images/weddings/w12.mov",
   ],
 };
 

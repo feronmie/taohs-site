@@ -9,7 +9,7 @@ const society = [
     available: true,
   },
   {
-    img: "/images/DD.png",
+    img: "/images/dd1.png",
     link: "",
     available: false, // Coming soon image
   },
