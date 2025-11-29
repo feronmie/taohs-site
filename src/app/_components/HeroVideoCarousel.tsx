@@ -59,7 +59,7 @@ export default function HeroVideoCarousel() {
           ]}
         />
         <a
-          href="#scene"
+          href="/services"
           className="mt-10 inline-block rounded-lg border border-[#B79E62] px-6 py-3 text-white backdrop-blur transition hover:bg-pink-500/20"
         >
           Explore TAOHS

@@ -194,7 +194,7 @@ export default function PrivacyPolicyPage() {
                 <p>If you have any questions or concerns about this Privacy Policy or how we handle your personal data, contact us at:</p>
                 <p className="mt-4">
                   <strong>The Art of High Society (TAOHS)</strong><br />
-                  📧 Email: <a href="mailto:privacy@theartofhighsociety.com" className="text-[#B79E62] hover:underline">privacy@theartofhighsociety.com</a><br />
+                  📧 Email: <a href="mailto:admin@theartofhighsociety.com" className="text-[#B79E62] hover:underline">privacy@theartofhighsociety.com</a><br />
                 
                 </p>
               </>

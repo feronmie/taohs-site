@@ -199,7 +199,7 @@ export default function TermsOfServicePage() {
                   <br />
                   📧 Email:{' '}
                   <a
-                    href="mailto:contact@theartofhighsociety.com"
+                    href="mailto:admin@theartofhighsociety.com"
                     className="text-[#B79E62] hover:underline"
                   >
                    contact@theartofhighsociety.com

@@ -26,8 +26,8 @@ export default function PortfolioHomepageSection() {
 
 
     {
-      id: "E1",
-      title: "E1 – Exclusive",
+      id: "Events",
+      title: "Events – Exclusive",
       date: "2025",
       cover: "/images/E1/E1.jpeg",
     },

@@ -72,12 +72,11 @@ export default function Navbar() {
             <ul className="flex flex-col items-end gap-5 text-lg font-serif">
               {[
                 
-                { label: 'IT Girl', href: '#taohs-ITG' },
-                { label: 'Diaspora Diaries', href: '#society-list' },
-                { label: 'Scene & Society', href: '#scene-society' },
+                { label: 'Home', href: '/' }, 
                 { label: 'Services', href: '/services' },
                 { label: 'TAOHS Archive', href: '/#portfolio' },
-                { label: 'Join', href: '#join' },
+                { label: 'Contact', href: '/services/#contact' },
+                { label: 'Join The Waiting List', href: '#join' },
               ].map((item) => (
                 <li key={item.label}>
                   <a

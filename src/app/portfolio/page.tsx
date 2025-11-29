@@ -11,7 +11,7 @@ const events = [
  
   {
     id: "E1",
-    title: "E1 – Exclusive",
+    title: "Events – Exclusive",
     date: "2025",
     cover: "/images/E1/E1.jpeg",
   },
@@ -29,7 +29,7 @@ const events = [
   },
   {
     id: "weddings",
-    title: "Owambes – Lagos",
+    title: "Owambe – Lagos",
     date: "2025",
     type: "video",
     cover: "/images/weddings/w2.mp4",
