@@ -7,7 +7,7 @@ import Navbar from "../../_components/Navbar";
 import FooterNav from "../../_components/FooterNav";
 
 const sampleEvent = {
-  title: "Owambes – Lagos",
+  title: "Owambe – Lagos",
   date: "2025",
   location: "Lagos, Nigeria",
   images: [
