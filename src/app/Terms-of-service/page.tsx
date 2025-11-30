@@ -202,7 +202,7 @@ export default function TermsOfServicePage() {
                     href="mailto:admin@theartofhighsociety.com"
                     className="text-[#B79E62] hover:underline"
                   >
-                   contact@theartofhighsociety.com
+                   admin@theartofhighsociety.com
                   </a>
                   
                 </p>

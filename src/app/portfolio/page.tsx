@@ -10,7 +10,7 @@ import FooterNav from "../_components/FooterNav";
 const events = [
  
   {
-    id: "E1",
+    id: "Events",
     title: "Events – Exclusive",
     date: "2025",
     cover: "/images/E1/E1.jpeg",
