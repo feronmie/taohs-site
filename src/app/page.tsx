@@ -23,28 +23,7 @@ import FooterNav from './_components/FooterNav'
 import PortfolioHomepageSection from "./_components/PortfolioHomepageSection";
 
 
-export const metadata: Metadata = {
-  title: 'Inside TAOHS — Culture is currency',
-  description:
-    'Editorial homepage with a hero vibe scan, visual loops, and latest drops from the scene.',
 
-  icons: {
-    icon: [
-      { url: '/favicon.ico' },
-      { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/favicon-16.png', sizes: '16x16', type: 'image/png' },
-    ],
-    apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
-    ],
-  },
-
-  openGraph: {
-    title: 'Inside TAOHS',
-    description: 'Scene-makers. Mood-movers. Society decoded.',
-    type: 'website',
-  },
-}
 
 
 export default function Home() {
