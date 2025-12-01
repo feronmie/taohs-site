@@ -18,7 +18,7 @@ const sampleEvent = {
   ],
   videos: [
     "/images/E1/w8.mp4",
-    "/videos/sample8.mov"
+    "/videos/sample8.mp4"
   ],
 };
 

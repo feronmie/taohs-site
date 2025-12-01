@@ -59,11 +59,22 @@ export default function ItGirlDiaspora() {
             transition={{ duration: 0.3 }}
           >
             <Link href={post.link} target="_blank">
-              <img
-                src={post.img}
-                alt={post.title}
-                className="w-full h-[420px] object-cover object-top group-hover:scale-105 transition-transform duration-500"
-              />
+            <img
+  src={post.img}
+  alt={post.title}
+  className="
+    w-full 
+    h-[260px]        /* mobile height */
+    sm:h-[340px]     /* small tablets */
+    md:h-[420px]     /* desktop */
+    object-cover 
+    object-top 
+    group-hover:scale-105 
+    transition-transform 
+    duration-500
+  "
+/>
+
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
               <div className="absolute bottom-4 left-4">
                 <span className="text-xs uppercase tracking-wide text-gilt">
