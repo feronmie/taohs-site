@@ -84,7 +84,7 @@ export default function JoinTheList() {
   }
 
   return (
-    <div className="text-center mx-auto max-w-xl space-y-6">
+    <div id="join" className="text-center mx-auto max-w-xl space-y-6">
 
       {/* Headline */}
       <div>
