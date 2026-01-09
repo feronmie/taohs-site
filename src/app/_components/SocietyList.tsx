@@ -4,15 +4,16 @@ import { motion } from "framer-motion";
 
 const society = [
   {
+    img: "/images/dia2.jpg",
+    link: "https://www.instagram.com/p/DSnTT-tDYmG/?igsh=MTF5NjVrZnhiY3JhYw==",
+    available: true,
+  },
+  {
     img: "/images/dia.jpeg",
     link: "https://www.instagram.com/p/DQO534pDVqY/?igsh=aTE0MmM3ajB2dzFn",
     available: true,
   },
-  {
-    img: "/images/dd1.png",
-    link: "",
-    available: false, // Coming soon image
-  },
+  
 ];
 
 export default function SocietyList() {

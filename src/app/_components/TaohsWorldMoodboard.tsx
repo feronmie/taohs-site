@@ -8,14 +8,15 @@ const posts = [
   {
     pillar: 'IT Girl',
     title: 'Visual Identity',
-    img: '/images/dia1.jpeg',
-    link: 'https://www.instagram.com/p/DRPrhZHjXdw/?igsh=MWpvYWF0ZTU2d2NiZQ==',
+    img: '/images/ITD.jpg',
+    link: 'https://www.instagram.com/p/DSVXjqRjRvU/?igsh=Njh5cHg3MjRvbG5t',
   },
+  
   {
     pillar: 'IT Girl',
-    title: 'Global Style Notes',
-    img: '/images/IT-G-TN.png',
-    link: 'https://www.instagram.com/theartofhighsociety/',
+    title: 'Visual Identity',
+    img: '/images/dia1.jpeg',
+    link: 'https://www.instagram.com/p/DRPrhZHjXdw/?igsh=MWpvYWF0ZTU2d2NiZQ==',
   },
   
 ]

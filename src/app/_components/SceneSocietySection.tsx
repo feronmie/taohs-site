@@ -28,7 +28,7 @@ export default function SceneSocietySection() {
 >
   <div className="relative w-full aspect-[3/4] md:aspect-video bg-black">
     <img
-      src="/images/scs2.jpeg"
+      src="/images/scsc45.jpg"
       alt="Scene and Society"
       className="
         absolute inset-0 w-full h-full 
@@ -64,7 +64,7 @@ export default function SceneSocietySection() {
           <div className="w-full max-w-4xl aspect-video">
             <iframe
               className="w-full h-full rounded-xl"
-              src="https://www.youtube.com/embed/Abk-7Nhs6Pg?si=AcXPn8ma7a-3vs88"
+              src="https://youtu.be/IYtunvXxPMs?si=IzUuXuVcf8xCxTSL"
               title="Scene & Society Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
