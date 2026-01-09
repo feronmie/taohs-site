@@ -64,7 +64,7 @@ export default function SceneSocietySection() {
           <div className="w-full max-w-4xl aspect-video">
             <iframe
               className="w-full h-full rounded-xl"
-              src="https://youtu.be/IYtunvXxPMs?si=IzUuXuVcf8xCxTSL"
+              src="https://www.youtube.com/embed/IYtunvXxPMs?si=yN3qkyhWNgFkUG18" 
               title="Scene & Society Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
