@@ -10,26 +10,27 @@ export default function PortfolioHomepageSection() {
     {
       id: "scene-society",
       title: "Scene & Society – Lagos",
-      date: "2025",
-      cover: "/images/scene-society/ss2.jpg",
+      date: "2026",
+      cover: "/images/scene-society/cs6.webp",
     },
   
     
     {
       id: "weddings",
       title: "Owambe – Lagos",
-      date: "2025",
+      date: "2026",
       type: "video",
-      cover: "/images/weddings/w2.mp4",
+      cover: "/images/weddings/w14.mp4",
     },
 
 
 
     {
-      id: "Events",
-      title: "Events – Exclusive",
-      date: "2025",
-      cover: "/images/E1/E1.jpeg",
+      id: "lagos-gallery-weekend",
+      title: "Lagos Gallery Weekend – Lagos",
+      date: "2026",
+      type: "video",
+      cover: "/images/lgw/lgw1.mp4",
     },
   ];
 

@@ -34,6 +34,13 @@ const events = [
     type: "video",
     cover: "/images/weddings/w2.mp4",
   },
+  {
+    id: "lagos-gallery-weekend",
+    title: "Lagos Gallery Weekend – Lagos",
+    date: "2026",
+    type: "video",
+    cover: "/images/lgw/lgw1.mp4",
+  },
 ];
 
 export default function PortfolioPage() {

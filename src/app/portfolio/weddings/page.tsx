@@ -24,6 +24,8 @@ const sampleEvent = {
     "/images/weddings/w10.mp4",
     "/images/weddings/w11.mp4",
     "/images/weddings/w12.mp4",
+    "/images/weddings/w14.mp4",
+
   ],
 };
 
