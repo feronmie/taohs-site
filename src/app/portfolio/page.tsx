@@ -10,6 +10,28 @@ import FooterNav from "../_components/FooterNav";
 const events = [
  
   {
+    id: "scene-society",
+    title: "Scene & Society – Lagos",
+    date: "2026",
+    cover: "/images/scene-society/cs6.jpg",
+  },
+  {
+    id: "weddings",
+    title: "Owambe – Lagos",
+    date: "2026",
+    type: "video",
+    cover: "/images/weddings/w14.mp4",
+  },
+
+  {
+    id: "lagos-gallery-weekend",
+    title: "Lagos Gallery Weekend – Lagos",
+    date: "2026",
+    type: "video",
+    cover: "/images/lgw/lgw1.mp4",
+  },
+
+  {
     id: "Events",
     title: "Events – Exclusive",
     date: "2025",
@@ -21,27 +43,10 @@ const events = [
     date: "2025",
     cover: "/images/lagos01/18.jpg",
   },
-  {
-    id: "scene-society",
-    title: "Scene & Society – Lagos",
-    date: "2024",
-    cover: "/images/scene-society/ss2.jpg",
-  },
-  {
-    id: "weddings",
-    title: "Owambe – Lagos",
-    date: "2025",
-    type: "video",
-    cover: "/images/weddings/w2.mp4",
-  },
-  {
-    id: "lagos-gallery-weekend",
-    title: "Lagos Gallery Weekend – Lagos",
-    date: "2026",
-    type: "video",
-    cover: "/images/lgw/lgw1.mp4",
-  },
+  
 ];
+
+
 
 export default function PortfolioPage() {
   return (
