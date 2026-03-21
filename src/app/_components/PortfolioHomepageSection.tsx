@@ -11,7 +11,7 @@ export default function PortfolioHomepageSection() {
       id: "scene-society",
       title: "Scene & Society – Lagos",
       date: "2026",
-      cover: "/images/scene-society/cs6.webp",
+      cover: "/images/scene-society/cs6.jpg",
     },
   
     
