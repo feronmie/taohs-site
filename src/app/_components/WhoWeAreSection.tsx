@@ -36,7 +36,7 @@ export default function WhoWeAreSection() {
         </h3>
         <div className="h-[3px] w-16 bg-[#B79E62] mb-6"></div>
         <p className="italic text-white/80 text-base sm:text-lg mb-4">
-          “Culture’s front row captured.”
+          “Culture’s front row, captured.”
         </p>
         <p className="text-base sm:text-lg text-white/85 leading-relaxed max-w-md">
           Scene. Style. Society. TAOHS frames the bold moments where they
